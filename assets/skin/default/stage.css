@@ -1,0 +1,198 @@
+* {
+  -fx-font-smoothing-type: gray;
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+.stage {
+  -fx-font-family: "Douyin Sans";
+  -fx-font-size: 13;
+  -fx-background-color: #ffffff;
+}
+.stage .scroll-bar {
+  -fx-font-size: 10;
+  -fx-background-color: transparent;
+}
+.stage .scroll-bar .track {
+  -fx-background-color: transparent;
+  -fx-background-radius: 99;
+}
+.stage .scroll-bar .thumb {
+  -fx-background-color: #4abd6c;
+  -fx-effect: dropshadow(three-pass-box, #d4ead8, 10, 0, 0, 0);
+}
+.stage .scroll-bar .decrement-arrow {
+  -fx-background-color: transparent;
+}
+.stage .scroll-bar .increment-arrow {
+  -fx-background-color: transparent;
+}
+.stage .button {
+  -fx-background-color: #4abd6c;
+  -fx-text-fill: #ffffff;
+}
+.stage .button:hover {
+  -fx-background-color: #399b56;
+}
+.stage .text-field {
+  -fx-background-color: #d4ead8;
+  -fx-text-fill: #4abd6c;
+  -fx-background-radius: 5;
+}
+.stage .icon-button {
+  -fx-background-color: transparent;
+  -fx-text-fill: #4abd6c;
+}
+.stage .icon-button:hover {
+  -fx-background-color: #d4ead8;
+  -fx-text-fill: #399b56;
+}
+.stage .combo-box {
+  -fx-background-color: #d4ead8;
+  -fx-text-fill: #4abd6c;
+  -fx-background-radius: 5;
+}
+.stage .list-view {
+  -fx-background-radius: 4;
+  -fx-background-color: #ffffff;
+}
+.stage .list-view .list-cell {
+  -fx-background-color: transparent;
+}
+.stage .list-view .list-cell:filled {
+  -fx-text-fill: #4abd6c;
+}
+.stage .list-view .list-cell:hover {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #95d8a9;
+}
+.stage .list-view .list-cell:selected {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: #4abd6c;
+}
+.stage .check-box .box {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 6;
+  -fx-border-color: #6fcb8a;
+  -fx-border-width: 0.8;
+  -fx-border-style: solid;
+  -fx-border-radius: 6;
+}
+.stage .check-box:selected .mark {
+  -fx-background-color: #4abd6c;
+}
+.stage .avatar {
+  -fx-border-color: #6fcb8a;
+  -fx-border-width: 0.8;
+  -fx-border-style: dashed;
+  -fx-border-radius: 12;
+}
+.stage .icon-pane {
+  -fx-border-style: solid;
+  -fx-border-radius: 12;
+  -fx-border-color: #4abd6c;
+  -fx-border-width: 0 0 1 0;
+}
+.stage .tab-pane {
+  -fx-background-color: #ffffff;
+  -fx-border-color: #6fcb8a;
+  -fx-border-width: 0.8;
+  -fx-border-style: solid;
+  -fx-border-radius: 12 12 0 0;
+}
+.stage .tab-pane .tab-header-background {
+  -fx-background-color: transparent;
+}
+.stage .tab-pane .tab {
+  -fx-background-color: transparent;
+  -fx-border-color: #6fcb8a;
+  -fx-border-width: 0.8;
+  -fx-border-style: solid;
+  -fx-border-radius: 8 8 0 0;
+  -fx-background-radius: 8 8 0 0;
+  -fx-padding: 4 8;
+}
+.stage .tab-pane .tab:selected {
+  -fx-background-color: #4abd6c;
+}
+.stage .tab-pane .tab:selected .tab-label {
+  -fx-text-fill: #ffffff;
+}
+.stage .table-view {
+  -fx-background-color: transparent;
+  -fx-border-color: #95d8a9;
+  -fx-border-width: 1;
+  -fx-border-style: solid;
+  -fx-border-radius: 8;
+}
+.stage .table-view .column-header-background {
+  -fx-background-color: transparent;
+  -fx-border-color: #95d8a9;
+  -fx-border-width: 0 0 0.4 0;
+  -fx-border-style: solid;
+}
+.stage .table-view .column-header-background .filler {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0;
+}
+.stage .table-view .column-header {
+  -fx-font-size: 14;
+  -fx-background-color: transparent;
+  -fx-border-color: #95d8a9;
+  -fx-border-width: 0 0.6 0.6 0;
+  -fx-border-style: solid;
+}
+.stage .table-view .column-header .label {
+  -fx-text-fill: #4abd6c;
+}
+.stage .table-view .table-row-cell {
+  -fx-background-color: transparent;
+  -fx-font-size: 14;
+}
+.stage .table-view .table-row-cell:filled {
+  -fx-border-color: #95d8a9;
+  -fx-border-width: 0 0 0.6 0;
+  -fx-border-style: solid;
+  -fx-text-background-color: #399b56;
+}
+.stage .table-view .table-row-cell:selected {
+  -fx-background-color: #6fcb8a;
+  -fx-table-cell-border-color: #95d8a9;
+  -fx-text-background-color: #ffffff;
+}
+.stage .table-view .table-row-cell .cell {
+  -fx-table-cell-border-color: transparent;
+}
+.stage .scroll-pane {
+  -fx-background: #ffffff;
+  -fx-border-color: #4abd6c;
+  -fx-border-width: 0.8;
+  -fx-border-style: solid;
+  -fx-border-radius: 4;
+}
+.stage .scroll-pane .corner {
+  -fx-background-color: transparent;
+}
+.stage .terminal-text {
+  -fx-fill: #000;
+}
+.stage .terminal-red {
+  -fx-fill: red;
+}
+.stage .terminal-green {
+  -fx-fill: green;
+}
+.stage .terminal-yellow {
+  -fx-fill: yellow;
+}
+.stage .terminal-blue {
+  -fx-fill: blue;
+}
+.stage .terminal-cyan {
+  -fx-fill: cyan;
+}
+.stage .terminal-white {
+  -fx-fill: white;
+}
+.stage .terminal-purple {
+  -fx-fill: purple;
+}

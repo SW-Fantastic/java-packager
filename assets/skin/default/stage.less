@@ -1,0 +1,239 @@
+@background: #FFF;
+@accent: #4ABD6C;
+@accent-hover: #D4EAD8;
+
+* {
+    -fx-font-smoothing-type: gray;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.stage {
+
+
+
+    -fx-font-family: "Douyin Sans";
+    -fx-font-size: 13;
+
+    -fx-background-color: @background;
+
+    .scroll-bar {
+        -fx-font-size: 10;
+        -fx-background-color:transparent;
+        .track {
+          -fx-background-color:transparent;
+          -fx-background-radius: 99;
+        }
+        .thumb {
+          -fx-background-color:@accent;
+          -fx-effect:dropshadow(three-pass-box,@accent-hover,10,0,0,0);
+        }
+        .decrement-arrow {
+          -fx-background-color: transparent;
+        }
+        .increment-arrow{
+          -fx-background-color: transparent;
+        }
+    }
+
+    .button {
+        -fx-background-color: @accent;
+        -fx-text-fill: @background;
+        &:hover {
+            -fx-background-color: darken(@accent, 10%);
+        }
+    }
+
+    .text-field {
+        -fx-background-color: @accent-hover;
+        -fx-text-fill: @accent;
+        -fx-background-radius: 5;
+    }
+
+    .icon-button {
+        -fx-background-color: transparent;
+        -fx-text-fill: @accent;
+        &:hover {
+            -fx-background-color: @accent-hover;
+            -fx-text-fill: darken(@accent, 10%);
+        }
+    }
+
+    .combo-box {
+        -fx-background-color: @accent-hover;
+        -fx-text-fill: @accent;
+        -fx-background-radius: 5;
+    }
+
+    .list-view {
+        -fx-background-radius: 4;
+        -fx-background-color: @background;
+        .list-cell {
+            -fx-background-color: transparent;
+            &:filled {
+                -fx-text-fill: @accent;
+            }
+            &:hover {
+                -fx-text-fill: @background;
+                -fx-background-color: lighten(@accent, 20%);
+            }
+            &:selected {
+                -fx-text-fill: @background;
+                -fx-background-color: @accent;
+            }
+        }
+    }
+
+    .check-box {
+
+        .box {
+            -fx-background-color: @background;
+            -fx-background-radius: 6;
+            -fx-border-color: lighten(@accent, 10%);
+            -fx-border-width: 0.8;
+            -fx-border-style: solid;
+            -fx-border-radius: 6;
+        }
+
+        &:selected .mark {
+            -fx-background-color: @accent;
+        }
+
+    }
+
+    .avatar {
+
+        -fx-border-color: lighten(@accent, 10%);
+        -fx-border-width: 0.8;
+        -fx-border-style: dashed;
+        -fx-border-radius: 12;
+
+    }
+
+    .icon-pane {
+         -fx-border-style: solid;
+         -fx-border-radius: 12;
+         -fx-border-color: @accent;
+         -fx-border-width: 0 0 1 0;
+    }
+
+    .tab-pane {
+
+        -fx-background-color: @background;
+        -fx-border-color: lighten(@accent, 10%);
+        -fx-border-width: 0.8;
+        -fx-border-style: solid;
+        -fx-border-radius: 12 12 0 0;
+
+        .tab-header-background {
+            -fx-background-color: transparent;
+        }
+        .tab {
+            -fx-background-color: transparent;
+            -fx-border-color: lighten(@accent, 10%);
+            -fx-border-width: 0.8;
+            -fx-border-style: solid;
+            -fx-border-radius: 8 8 0 0;
+            -fx-background-radius: 8 8 0 0;
+            -fx-padding: 4 8;
+            &:selected {
+                -fx-background-color: @accent;
+                .tab-label {
+                    -fx-text-fill: @background;
+                }
+            }
+        }
+
+    }
+
+    .table-view {
+
+        -fx-background-color: transparent;
+        -fx-border-color: lighten(@accent, 20%);
+        -fx-border-width: 1;
+        -fx-border-style: solid;
+        -fx-border-radius: 8;
+
+        .column-header-background {
+
+            -fx-background-color:  transparent;
+            -fx-border-color: lighten(@accent, 20%);
+            -fx-border-width: 0 0 0.4 0;
+            -fx-border-style: solid;
+            .filler {
+                -fx-background-color:transparent;
+                -fx-background-radius: 0;
+            }
+        }
+
+        .column-header {
+            -fx-font-size: 14;
+            -fx-background-color:transparent;
+            -fx-border-color: lighten(@accent, 20%);
+            -fx-border-width: 0 0.6 0.6 0;
+            -fx-border-style: solid;
+
+            .label {
+                -fx-text-fill: @accent;
+            }
+        }
+
+        .table-row-cell {
+            -fx-background-color: transparent;
+            -fx-font-size: 14;
+            &:filled {
+                -fx-border-color: lighten(@accent, 20%);
+                -fx-border-width: 0 0 0.6 0;
+                -fx-border-style: solid;
+                -fx-text-background-color: darken(@accent, 10%);
+            }
+            &:selected {
+                -fx-background-color: lighten(@accent, 10%);
+                -fx-table-cell-border-color: lighten(@accent, 20%);
+                -fx-text-background-color: @background;
+            }
+            .cell {
+                -fx-table-cell-border-color: transparent;
+            }
+        }
+    }
+
+    .scroll-pane {
+
+        -fx-background: @background;
+        -fx-border-color: @accent;
+        -fx-border-width: 0.8;
+        -fx-border-style: solid;
+        -fx-border-radius: 4;
+
+        .corner {
+            -fx-background-color: transparent;
+        }
+    }
+
+    .terminal-text {
+        -fx-fill: #000;
+    }
+    .terminal-red {
+        -fx-fill: red;
+    }
+    .terminal-green {
+        -fx-fill: green;
+    }
+    .terminal-yellow {
+        -fx-fill: yellow;
+    }
+    .terminal-blue {
+        -fx-fill: blue;
+    }
+    .terminal-cyan {
+        -fx-fill: cyan;
+    }
+    .terminal-white {
+        -fx-fill: white;
+    }
+    .terminal-purple {
+        -fx-fill: purple;
+    }
+
+
+}
