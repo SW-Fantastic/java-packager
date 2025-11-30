@@ -33,7 +33,6 @@ other files       - Application resources
 ## 使用
 
 你可以在Release找到本应用的发布版本，解压到合适的位置并启动Akashic.exe。
-> 请注意，路径不能包含中文，这是一个Bug，后需要会得到处理。
 
 ![image](doc/mainview.png)
 
