@@ -35,18 +35,14 @@ const char* getHomeDir() {
     return NULL;
 }
 int changeDir(char* path) {
-    printf("chdir begin\n");
     int length = MultiByteToWideChar(CP_UTF8, 0, path, -1, NULL, 0);
-    printf("len %d\n", length);
     wchar_t* wstring = (wchar_t*)(malloc(sizeof(wchar_t) * length));
     if (wstring == NULL) {
-        printf("failed, no wstring\n");
         return -1;
     }
     memset(wstring, 0, sizeof(wchar_t) * length);
     MultiByteToWideChar(CP_UTF8, 0, path, -1, wstring, length);
     int rst = _wchdir(wstring);
-    printf("loc %s result is %d \n", wstring, rst);
     free(wstring);
     return rst;
 }
