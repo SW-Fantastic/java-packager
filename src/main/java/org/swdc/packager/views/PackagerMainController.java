@@ -622,7 +622,7 @@ public class PackagerMainController extends ViewController<PackagerMainView> {
                     String mainModule = txtMainModule.getText();
                     if(mainModule.isBlank()) {
                         StringBuilder classPath = new StringBuilder();
-                        String pathPrefix = "/libs/";
+                        String pathPrefix = "libs/";
                         for (ModEntity mod : packageProject.getDependencies()) {
                             if (!mod.isEnabled()) {
                                 continue;
@@ -637,7 +637,7 @@ public class PackagerMainController extends ViewController<PackagerMainView> {
                         }
                         packageConfig.setClasspath(classPath.toString());
                     } else {
-                        packageConfig.setModulePath("/libs");
+                        packageConfig.setModulePath("libs");
                         packageConfig.setMainModule(packageProject.getMainModule());
                     }
 

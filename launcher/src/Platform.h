@@ -13,6 +13,8 @@ extern "C" {
 
 extern const char* getHomeDir();
 
+extern int changeDir(char* path);
+
 extern int launchVM(
         char* vmLocation, 
         int vmOptionCount, 
@@ -29,7 +31,6 @@ extern int launchVM(
     #include <Windows.h>
     #include <shlobj.h>
     #include <direct.h>  // _chdir
-    #define chdir _chdir
     #define API_EXPORT extern "C" __declspec(dllexport)
     #define Handler HINSTANCE
     #define LIB_NAME "runtime/bin/server/jvm.dll"

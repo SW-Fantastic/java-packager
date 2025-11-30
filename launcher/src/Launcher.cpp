@@ -103,7 +103,7 @@ char* getLibOption(cJSON* modulePath, cJSON* classPath) {
     }
 
     char* libPathStr = cJSON_GetStringValue(modulePath == NULL ? classPath : modulePath);
-    libPathStr = getLocation(libPathStr);
+    //libPathStr = getLocation(libPathStr);
     int libPathStrLen = strlen(optClassPath) + strlen(libPathStr) + 2;
         
     char* optBuf = (char*)malloc(sizeof(char) * libPathStrLen);
@@ -262,7 +262,7 @@ int main(int argC, char** argV) {
         return 0;
     }
 
-    if(chdir(loc) < 0) {
+    if(changeDir(loc) < 0) {
         printf("Cannot find execute location, failed to launch java vm, exit");
         return 0;
     }
